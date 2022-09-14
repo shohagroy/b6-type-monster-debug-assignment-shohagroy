@@ -12,7 +12,7 @@ let startTime;
 let questionText = "";
 
 // Load and display question
-fetch("./texts.json")
+fetch("texts.json")
   .then((res) => res.json())
   .then((data) => {
     questionText = data[Math.floor(Math.random() * data.length)];
@@ -35,7 +35,7 @@ const typeController = (e) => {
 
   // if it is not a valid character like Control/Alt then skip displaying anything
   if (!validLetters.includes(newLetter)) {
-    return;
+    return errorCount++;
   }
 
   userText += newLetter;
