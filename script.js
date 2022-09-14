@@ -69,7 +69,8 @@ const gameOver = () => {
   // the current time is the finish time
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
-  const timeTaken = (finishTime - startTime) / 1000;
+  const timeTakenFloat = (finishTime - startTime) / 1000;
+  const timeTaken = parseInt(timeTakenFloat);
 
   // show result modal
   resultModal.innerHTML = "";
@@ -107,6 +108,7 @@ const start = () => {
 
   let count = 3;
   countdownOverlay.style.display = "flex";
+  countdownOverlay.innerHTML = "";
 
   const startCountdown = setInterval(() => {
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
