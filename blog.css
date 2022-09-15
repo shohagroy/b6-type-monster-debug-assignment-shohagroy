@@ -1,0 +1,58 @@
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.loading-spiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 40px;
+    z-index: 99;
+}
+
+.loading-spiner img{
+    position: absolute;
+    width: 60px;
+}
+
+.card-button{
+    color: blue;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.card-button:hover{
+    color: red;
+    font-size: 45px;
+}
+
+
+.athor-main img{
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+.bloc-container{
+    background-color: rgba(255, 0, 0, 0.074);
+}
+
+footer{
+    font-size: 20px;
+}
+
+
+footer i{
+    color: white;
+}
+
+#main-section{
+    min-height: 80vh;
+}
