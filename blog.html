@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Common Four Question and Answer</title>
+
     <!-- bootstrap css added link  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -19,39 +20,70 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- custome css link added link  -->
-    <link rel="stylesheet" href="blog.css" />
+    <style>
+      body {
+        background-color: rgba(211, 211, 211, 0.267);
+      }
+
+      header {
+        background-color: rgba(225, 255, 0, 0.815);
+      }
+
+      .blog-container {
+        background-color: rgba(255, 0, 0, 0.074);
+      }
+
+      .blog-container h3 {
+        background-color: rgba(0, 0, 255, 0.073);
+        border-radius: 30px;
+        text-align: center;
+      }
+
+      .text-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 30px;
+        border: 2px solid black;
+        text-justify: inter-word;
+      }
+
+      footer {
+        font-size: 20px;
+      }
+
+      footer i {
+        color: white;
+      }
+    </style>
   </head>
   <body>
-    <header class="text-center col-12 col-sm-12, col-md-12, col-xl-12 p-3 my-2">
+    <header class="text-center col-12 p-3 my-2">
       <h2>JavaScript Common Four Interview Question and Answer</h2>
     </header>
     <!-- main container  -->
     <main id="blog-main-container">
       <div class="container">
         <div class="row">
-          <div
-            class="col-12 col-sm-12, col-md-12, col-xl-12 p-3 my-2 rounded rounded-4 blog-container"
-          >
+          <div class="col-12 p-3 my-2 rounded rounded-4 blog-container">
             <h3 class="p-3">
-              localSorage ও sectionStorage এর মদ্ধে পার্থক্য কী?
+              LocalSorage ও SectionStorage এর মদ্ধে পার্থক্য কী?
             </h3>
 
             <strong>Answer:</strong>
             <div class="text-container">
               <p>
-                localStorage ও sectionStorage এই দুই টাই হল Browser এর API
+                LocalStorage ও SectionStorage এই দুই টাই হল Browser এর API
                 <br />
-                <strong>sectionStorage</strong> - প্রায় সকল browser এ কোনো ডাটা
-                store করে রাখতে Browser এ Application Tab এ sectionStorage and
-                localStorage নামে একটা option থাকে। এবং সেখানে কিছু data Store
-                করে রাখা যায় । sectionStorage এ কোনো Data রাখলে সেই সকল data ঠিক
+                <strong>sectionStorage</strong> - প্রায় সকল browser এ কিছু Data
+                Store করে রাখতে Browser এ Application Tab এ sectionStorage and
+                localStorage নামে একটা option থাকে। এবং সেখানে Data Store করে
+                রাখা যায় । sectionStorage এ কোনো Data রাখলে সেই সকল Data ঠিক
                 ততক্ষন থাকবে যতক্ষন অই Browser এর অই Tab টি Open থাকবে, অর্থাত
                 আমরা বলতে পারি sectionStorage হল Temporary data রাখতে পারে ।
               </p>
 
               <p>
-                <strong>localStorage</strong> - sectionStorage এর মতই
+                <strong>LocalStorage</strong> - SectionStorage এর মতই
                 localStorage কাজ করে, কিন্তু localStroge এ কোনো Data রাখলে সেই
                 Data Temporary চলে যায় না, localStorage এ Data রাখলে সেই সকল
                 data localStorage এ Store হয়ে থাকে । এবং পরবর্তীতে সেই সকল data
@@ -60,9 +92,7 @@
             </div>
           </div>
 
-          <div
-            class="col-12 col-sm-12, col-md-12, col-xl-12 blog-container p-4 rounded rounded-4 my-2"
-          >
+          <div class="col-12 blog-container p-4 rounded rounded-4 my-2">
             <h3 class="p-3">
               Gobal Scope এর সাথে Blog Scope এর মদ্ধে Difference কি?
             </h3>
@@ -75,36 +105,32 @@
               </p>
 
               <p>
-                <strong>Blog Socpe:</strong> Blog Scope holo Curly brackets {}
-                এর ভিতরের কে বুজায়, এই Curly brackets এর ভিতরে কোনো Code রাখলে
-                সেই Code কে শুধু সেই Curly brackets এর ভিতর থেকে Access করা যার
-                । Gobal (JS File) এ সেই সকল Code কে Access করা যায় না ।
+                <strong>Blog Socpe:</strong> Blog Scope Curly brackets "{}" এর
+                ভিতরের কে বুজায়, এই Curly brackets এর ভিতরে কোনো Code রাখলে সেই
+                Code কে শুধু সেই Curly brackets এর ভিতর থেকে Access করা যার ।
+                Gobal (JS File) এ সেই সকল Code কে Access করা যায় না ।
               </p>
             </div>
           </div>
 
-          <div
-            class="col-12 col-sm-12, col-md-12, col-xl-12 blog-container p-4 rounded rounded-4 my-2"
-          >
+          <div class="col-12 blog-container p-4 rounded rounded-4 my-2">
             <h3 class="p-3">JavaScript এর Event Loop কী ভাবে কাজ করে ?</h3>
             <strong>Answer:</strong>
             <div class="text-container">
               <p>
-                javaScripr এর Event Loop JS Code run করতে একটি গুরুত্বপূর্ণ
+                JavaScript এর Event Loop JS Code run করতে একটি গুরুত্বপূর্ণ
                 ভুমিকা পারন করে । JavaScript এ function call করলে সকল function
                 একটার পর একটা Serial Wisa Execute হতে থাকে । প্রথমে সেই সকল code
                 JS এর একটি memory তে Save হয় তারপর সেখান থেকে Execute হয়ে Queue
-                (js engin part) এর মদ্ধে পাঠিয়ে দেয় । যেই code Execute হতে যত কম
-                সময় লাগে সেই code তত কম সময়ে Queue এর মদ্ধে চলে আসে । এবং সেখান
+                (js engin part) এর মদ্ধে পাঠিয়ে দেয় । যেই Code Execute হতে যত কম
+                সময় লাগে সেই Code তত কম সময়ে Queue এর মদ্ধে চলে আসে । এবং সেখান
                 থেকে Code গুলো Seial Wise Prient হতে থাকে । এই Event Loop এর
                 কারনে JS Engin Code গুলোকে Brack না করেই চালাতে থাকে ।
               </p>
             </div>
           </div>
 
-          <div
-            class="col-12 col-sm-12, col-md-12, col-xl-12 blog-container p-4 rounded rounded-4 my-2 mb-5"
-          >
+          <div class="col-12 blog-container p-4 rounded rounded-4 my-2 mb-5">
             <h3 class="p-3">JavaScript এ কত ভাবে আমারা undifine পেতে পারি ?</h3>
 
             <strong>Answer:</strong>
@@ -126,8 +152,8 @@
               </p>
 
               <p>
-                ৫। কোনো Object Declate করার পর সেই object এর এমন কোনো একটা
-                property কে যদি call করা হয় সেই property ঐ object এর মদ্ধে নেই
+                ৫। কোনো Object Declate করার পর সেই object এর কোনো একটা property
+                কে যদি call করা হয় আর সেই property যদি ঐ object এর মদ্ধে না থাকে
                 তাহলে undifine হয়।
               </p>
               <p>
@@ -137,8 +163,8 @@
               </p>
               <p>
                 ৭। কোনো Array Declate করার পর সেই Array এর কোনো একটা element কে
-                যদি deleted করা হয় এবং সেই element এর index কে যদি call করা হয়
-                তাহলে undifine হয়।
+                যদি deleted করা হয় এবং সেই deleted করা element এর index কে যদি
+                call করা হয় তাহলে undifine হয়।
               </p>
               <p>
                 ৮। কোনো একটা Variable Declare করার সময় যদি ঐ Variable এর মান
