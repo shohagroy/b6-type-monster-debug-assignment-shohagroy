@@ -23,118 +23,140 @@
     <link rel="stylesheet" href="blog.css" />
   </head>
   <body>
+    <header class="text-center col-12 col-sm-12, col-md-12, col-xl-12 p-3 my-2">
+      <h2>JavaScript Common Four Interview Question and Answer</h2>
+    </header>
     <!-- main container  -->
     <main id="blog-main-container">
       <div class="container">
         <div class="row">
           <div
-            class="col-12 col-sm-12, col-md-12, col-xl-12 p-3 my-2 rounded rounded-4 bloc-container"
+            class="col-12 col-sm-12, col-md-12, col-xl-12 p-3 my-2 rounded rounded-4 blog-container"
           >
-            <h3 class="p-2">
+            <h3 class="p-3">
               localSorage ও sectionStorage এর মদ্ধে পার্থক্য কী?
             </h3>
-            <p>
-              localStorage ও sectionStorage এই দুই টাই হল Browser এর API <br />
-              <strong>sectionStorage</strong> - প্রায় সকল browser এ কোনো ডাটা
-              store করে রাখতে Browser এ Application Tab এ sectionStorage and
-              localStorage নামে একটা option থাকে। এবং সেখানে কিছু data Store করে
-              রাখা যায় । sectionStorage এ কোনো Data রাখলে সেই সকল data ঠিক
-              ততক্ষন থাকবে যতক্ষন অই Browser এর অই Tab টি Open থাকবে, অর্থাত
-              আমরা বলতে পারি sectionStorage হল Temporary data রাখতে পারে ।
-            </p>
 
-            <p>
-              <strong>localStorage</strong> - sectionStorage এর মতই localStorage
-              কাজ করে, কিন্তু localStroge এ কোনো Data রাখলে সেই Data Temporary
-              চলে যায় না, localStorage এ Data রাখলে সেই সকল data localStorage এ
-              Store হয়ে থাকে । এবং পরবর্তীতে সেই সকল data Use করা যায় ।
-            </p>
+            <strong>Answer:</strong>
+            <div class="text-container">
+              <p>
+                localStorage ও sectionStorage এই দুই টাই হল Browser এর API
+                <br />
+                <strong>sectionStorage</strong> - প্রায় সকল browser এ কোনো ডাটা
+                store করে রাখতে Browser এ Application Tab এ sectionStorage and
+                localStorage নামে একটা option থাকে। এবং সেখানে কিছু data Store
+                করে রাখা যায় । sectionStorage এ কোনো Data রাখলে সেই সকল data ঠিক
+                ততক্ষন থাকবে যতক্ষন অই Browser এর অই Tab টি Open থাকবে, অর্থাত
+                আমরা বলতে পারি sectionStorage হল Temporary data রাখতে পারে ।
+              </p>
+
+              <p>
+                <strong>localStorage</strong> - sectionStorage এর মতই
+                localStorage কাজ করে, কিন্তু localStroge এ কোনো Data রাখলে সেই
+                Data Temporary চলে যায় না, localStorage এ Data রাখলে সেই সকল
+                data localStorage এ Store হয়ে থাকে । এবং পরবর্তীতে সেই সকল data
+                Use করা যায় ।
+              </p>
+            </div>
           </div>
 
           <div
-            class="col-12 col-sm-12, col-md-12, col-xl-12 bloc-container p-4 rounded rounded-4 my-2"
+            class="col-12 col-sm-12, col-md-12, col-xl-12 blog-container p-4 rounded rounded-4 my-2"
           >
-            <h3 class="p-2">
+            <h3 class="p-3">
               Gobal Scope এর সাথে Blog Scope এর মদ্ধে Difference কি?
             </h3>
-            <p>
-              <strong>Gobal Scope:</strong> Gobal Scope এর মদ্ধে কোনো Code রাখলে
-              সেই Code কে Gobal অর্থাত JS File এর সব জায়গা থেকে Access করা যায় ।
-            </p>
+            <strong>Answer:</strong>
+            <div class="text-container">
+              <p>
+                <strong>Gobal Scope:</strong> Gobal Scope এর মদ্ধে কোনো Code
+                রাখলে সেই Code কে Gobal অর্থাত JS File এর সব জায়গা থেকে Access
+                করা যায় ।
+              </p>
 
-            <p>
-              <strong>Blog Socpe:</strong> Blog Scope holo Curly brackets {} এর
-              ভিতরের কে বুজায়, এই Curly brackets এর ভিতরে কোনো Code রাখলে সেই
-              Code কে শুধু সেই Curly brackets এর ভিতর থেকে Access করা যার ।
-              Gobal (JS File) এ সেই সকল Code কে Access করা যায় না ।
-            </p>
+              <p>
+                <strong>Blog Socpe:</strong> Blog Scope holo Curly brackets {}
+                এর ভিতরের কে বুজায়, এই Curly brackets এর ভিতরে কোনো Code রাখলে
+                সেই Code কে শুধু সেই Curly brackets এর ভিতর থেকে Access করা যার
+                । Gobal (JS File) এ সেই সকল Code কে Access করা যায় না ।
+              </p>
+            </div>
           </div>
 
           <div
-            class="col-12 col-sm-12, col-md-12, col-xl-12 bloc-container p-4 rounded rounded-4 my-2"
+            class="col-12 col-sm-12, col-md-12, col-xl-12 blog-container p-4 rounded rounded-4 my-2"
           >
-            <h3 class="p-2">JavaScript এর Event Loop কী ভাবে কাজ করে ?</h3>
-            <p>
-              javaScripr এর Event Loop JS Code run করতে একটি গুরুত্বপূর্ণ ভুমিকা
-              পারন করে । JavaScript এ function call করলে সকল function একটার পর
-              একটা Serial Wisa Execute হতে থাকে । প্রথমে সেই সকল code JS এর একটি
-              memory তে Save হয় তারপর সেখান থেকে Execute হয়ে Queue (js engin
-              part) এর মদ্ধে পাঠিয়ে দেয় । যেই code Execute হতে যত কম সময় লাগে
-              সেই code তত কম সময়ে Queue এর মদ্ধে চলে আসে । এবং সেখান থেকে Code
-              গুলো Seial Wise Prient হতে থাকে । এই Event Loop এর কারনে JS Engin
-              Code গুলোকে Brack না করেই চালাতে থাকে ।
-            </p>
+            <h3 class="p-3">JavaScript এর Event Loop কী ভাবে কাজ করে ?</h3>
+            <strong>Answer:</strong>
+            <div class="text-container">
+              <p>
+                javaScripr এর Event Loop JS Code run করতে একটি গুরুত্বপূর্ণ
+                ভুমিকা পারন করে । JavaScript এ function call করলে সকল function
+                একটার পর একটা Serial Wisa Execute হতে থাকে । প্রথমে সেই সকল code
+                JS এর একটি memory তে Save হয় তারপর সেখান থেকে Execute হয়ে Queue
+                (js engin part) এর মদ্ধে পাঠিয়ে দেয় । যেই code Execute হতে যত কম
+                সময় লাগে সেই code তত কম সময়ে Queue এর মদ্ধে চলে আসে । এবং সেখান
+                থেকে Code গুলো Seial Wise Prient হতে থাকে । এই Event Loop এর
+                কারনে JS Engin Code গুলোকে Brack না করেই চালাতে থাকে ।
+              </p>
+            </div>
           </div>
 
           <div
-            class="col-12 col-sm-12, col-md-12, col-xl-12 bloc-container p-4 rounded rounded-4 my-2 mb-5"
+            class="col-12 col-sm-12, col-md-12, col-xl-12 blog-container p-4 rounded rounded-4 my-2 mb-5"
           >
-            <h3 class="p-2">JavaScript এ কত ভাবে আমারা undifine পেতে পারি ?</h3>
+            <h3 class="p-3">JavaScript এ কত ভাবে আমারা undifine পেতে পারি ?</h3>
 
-            <p>JavaScript এ আট ভাবে আমরা undifine পেতে পারিঃ</p>
-            <p>১। কোনো Varibale initialized না হলে undifine হয়।</p>
-            <p>
-              ২। কোনো function Declare করার পর যদি ঐ function থেকে return না করা
-              হয় তাহলে undifine হয় ।
-            </p>
-            <p>
-              ৩। কোনো function Declare করার সময় যদি Parameter থাকে এবং ঐ
-              function কে call করার সময় সঠিক ভাবে parameter pass না করা হয় তাহলে
-              undifine হয় ।
-            </p>
-            <p>
-              ৪। function এ return করার সময় যদি return এর right side a কোনো কিছু
-              না দেওয়া হয় তাহলে undifine হয় ।
-            </p>
+            <strong>Answer:</strong>
+            <div class="text-container">
+              <p>JavaScript এ আট ভাবে আমরা undifine পেতে পারিঃ</p>
+              <p>১। কোনো Varibale initialized না হলে undifine হয়।</p>
+              <p>
+                ২। কোনো function Declare করার পর যদি ঐ function থেকে return না
+                করা হয় তাহলে undifine হয় ।
+              </p>
+              <p>
+                ৩। কোনো function Declare করার সময় যদি Parameter থাকে এবং ঐ
+                function কে call করার সময় সঠিক ভাবে parameter pass না করা হয়
+                তাহলে undifine হয় ।
+              </p>
+              <p>
+                ৪। function এ return করার সময় যদি return এর right side a কোনো
+                কিছু না দেওয়া হয় তাহলে undifine হয় ।
+              </p>
 
-            <p>
-              ৫। কোনো Object Declate করার পর সেই object এর এমন কোনো একটা
-              property কে যদি call করা হয় সেই property ঐ object এর মদ্ধে নেই
-              তাহলে undifine হয়।
-            </p>
-            <p>
-              ৬। কোনো Array Declate করার পর সেই Array এর এমন কোনো একটা element
-              এর index কে যদি access করা হয় সেই element এর index ঐ Array এর
-              মদ্ধে নেই তাহলে undifine হয়।
-            </p>
-            <p>
-              ৭। কোনো Array Declate করার পর সেই Array এর কোনো একটা element কে
-              যদি deleted করা হয় এবং সেই element এর index কে যদি call করা হয়
-              তাহলে undifine হয়।
-            </p>
-            <p>
-              ৮। কোনো একটা Variable Declare করার সময় যদি ঐ Variable এর মান
-              undifine set করে দেওয়া হয় তাহলে undifine হয় ।
-            </p>
+              <p>
+                ৫। কোনো Object Declate করার পর সেই object এর এমন কোনো একটা
+                property কে যদি call করা হয় সেই property ঐ object এর মদ্ধে নেই
+                তাহলে undifine হয়।
+              </p>
+              <p>
+                ৬। কোনো Array Declate করার পর সেই Array এর এমন কোনো একটা element
+                এর index কে যদি access করা হয় সেই element এর index ঐ Array এর
+                মদ্ধে নেই তাহলে undifine হয়।
+              </p>
+              <p>
+                ৭। কোনো Array Declate করার পর সেই Array এর কোনো একটা element কে
+                যদি deleted করা হয় এবং সেই element এর index কে যদি call করা হয়
+                তাহলে undifine হয়।
+              </p>
+              <p>
+                ৮। কোনো একটা Variable Declare করার সময় যদি ঐ Variable এর মান
+                undifine set করে দেওয়া হয় তাহলে undifine হয় ।
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </main>
 
     <!-- footer section  -->
-    <footer class="conrainer d-flex justify-content-between p-3 bg-dark">
+    <footer
+      class="conrainer text-center d-flex justify-content-center flex-column p-3 bg-dark"
+    >
       <div>
-        <p class="text-white">Copyright 2022 All Right Rejarver</p>
+        <p class="text-white">Copyright 2022 All rights reserved</p>
+        <p class="text-white">Follow Us</p>
       </div>
       <div>
         <a
@@ -160,83 +182,5 @@
         ></a>
       </div>
     </footer>
-    <!-- bootstrap js added link  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="js/app.js"></script>
   </body>
 </html>
-
-<!-- 
-1. LocalStorage and sectionStorage er moddhe diffarance ki..? 
-2. global scope and blog scope er moddhe diffarance ki..? 
-3. javascript er eventLoop eta kivabe kaj kore..?
-4. javascript a koto vabe amra undifine paite pare ..? 
-
-
-১। localSorage ও sectionStorage এর মদ্ধে পার্থক্য কী?
-উত্তরঃ localStorage ও sectionStorage এই দুই টাই হল Browser এর API ।
-sectionStorage- প্রায় সকল browser এ কোনো ডাটা store করে রাখতে Browser এ
-Application Tab এ sectionStorage and localStorage নামে একটা option থাকে। 
-এবং সেখানে কিছু data Store করে রাখা যায় । sectionStorage এ কোনো Data রাখলে সেই সকল data ঠিক ততক্ষন থাকবে যতক্ষন অই Browser এর অই Tab টি Open থাকবে, 
-অর্থাত আমরা বলতে পারি sectionStorage হল Demporary data  রাখতে পারে ।
-
-localStorage- sectionStorage এর মতই localStorage কাজ করে, কিন্তু localStroge এ কোনো Data রাখলে সেই Data Temporary চলে যায় না, localStorage এ Data রাখলে সেই সকল data localStorage এ Store হয়ে থাকে । এবং পরবর্তীতে সেই সকল data Use করা যায় ।
-
-er motoi localStorage kaj kore, kintu localStorage a knp data rakhle ta temporary cole jay na.. localAtorage a data rakhle seta seta localStroge a store hoye thake. anad seta oi same URL diye diye access kora jay
-
-
-২। Gobal Scope এর সাথে Blog Scope এর মদ্ধে Difference কি?
-
-ans: 
-
-2. gobal scope er moddhe kno code rakhle sei code k gobal a access kora jay.
-orthat gobal scope a kno variable declarer korle seta k js file er sob jaiga thake access kora jay.
-
-
-
-ar blog scope holo {} carly er vitor. ei carly bracecs {} er moddhe kno code rakhle seta k shudu ei scope se moddhe thake access kora jay. otrhat sai code k access korte oi {} er vitor thake use korte hobe, sei code k gobal a use kora jabe na.
-
-
-
-3. jvascript a event loop ekti guruttopurno kaj kore..
-javascript er function call korle sokol function ektar por ekta 
-serial wise exetute hote thake, ebong sai function gular moddhe kicu function er kaj ses korte somoy lagte pare, othoba setTimeOut daoya thakte pare..
-
-thik ekhane event loop kaj kote, browser javasctipt file run korar somoy sokol function gulo k ekti memoty te rakhe ebong sekhan thake code gulo exutate hote thake. abong code gulo poroborti te queue(js engin er part) er moddhe pathay day, abong sekhan thake serial wise code prient hote thake.. 
-orthat kno code k brack na korai javaScript code run kore.
-
-
-৩। 
-ans: 
-
-
-4. 8 way to get undifine
-
-1. kno varible initialized na hole undifine hoy.
-2. kno function declare korar por jodi oi function thake return kora na hoy tahole undifine hobe.
-3. kno function a parameter thakle sei function k call korar somoy shotik vabe
-parameter pass na korle undifine return korbe.
-4. function a kno kicu return korle jodi return re right side a amra bole na dai ki return korle, orthat shudu return korle sai function undifine return korbe.
-5. kno object declare korar por sai object a  emon ekta proparti k jodi call kora hoy sai proparti ar proparti value oi object er moddhe nai, tahole undifine hobe.
-6. kno ekta array declate korar por sai array er emon kno index number k jodi accesis korte cai sai index number oi array er moddhe nai, tahole undifine hobe.
-
-7. kno array er element jodi deleted kora hoy, and sai element k jodi access korar jonne try kora hoy tahole undifine hobe.
-8. kno ekta varible declare korar somoy jodi oi varible er man undifine set kora hoy tahole oi variable undifine
-
-৪। JavaScript এ কত ভাবে আমারা undifine পেতে পারি ?
-
-Ans: JavaScript এ আট ভাবে আমরা undifine পেতে পারিঃ
-১। কোনো Varibale initialized না হলে undifine হয়।
-২। কোনো function Declare করার পর যদি ঐ function থেকে return না করা হয় তাহলে undifine হয় ।
-৩। কোনো function Declare করার সময় যদি Parameter থাকে এবং ঐ function কে call করার সময় সঠিক ভাবে parameter pass না করা হয় তাহলে undifine হয় ।
-৪। function এ return করার সময় যদি return এর right side a কোনো কিছু না দেওয়া হয় তাহলে undifine হয় ।
-৫। কোনো Object Declate করার পর সেই object এর এমন কোনো একটা property কে যদি call করা হয় সেই property ঐ object এর মদ্ধে নেই তাহলে undifine হয়।
-৬। কোনো Array Declate করার পর সেই Array এর এমন কোনো একটা element এর index কে যদি access করা হয় সেই element এর index ঐ Array এর মদ্ধে নেই তাহলে undifine হয়।
-৭। কোনো Array Declate করার পর সেই Array এর কোনো একটা element কে যদি deleted করা হয় এবং সেই element এর index কে যদি call করা হয় তাহলে undifine হয়।
-৮। কোনো একটা Variable Declare করার সময় যদি ঐ Variable এর মান undifine set করে দেওয়া হয় তাহলে undifine হয় ।
--->
